@@ -1,0 +1,63 @@
+A number of friends have asked me for trade ideas over the years and I have been thinking of publishing trade ideas that require little to no maintenance. 
+
+Prerequisite knowledge.
+Some knowledge of Exchange traded Options would be ideal. 
+You will have to have a basic knowledge of Call and Put options, the concept of expiration cycles, and how to place combo orders (Strategies containing Calls & Puts or multiple legs of calls in one ticket)
+
+Implied Volatility – again it is not essential but IV is another corner stone component of my options strategy.
+
+In addition you will need to have a US Brokerage account with the ability to trade Options on stocks and Options on Futures – if you simply want to follow the trades for educational purposes or to learn how the strategy works….you can open a “Paper Account” and follow the trades.
+
+Additional knowledge that would be useful but not essential;
+Option Greeks is beneficial for understanding how the strategies work but not essential for putting on the trades. 
+The Greeks are the building blocks of the Black Scholes options pricing model ; Delta, Theta, Gamma, Vega and Rho. They are outputs from the options pricing model used to price options,  the delta and theta are the bed rock of my strategy.
+
+Delta is the rate of change of an option price in relation to a change in the underlying asset. So if AAPL is at 100, a s50 Call would have a delta of .5 (at the money ATM) and a delta of .3 is out of the money(OTM). 
+A 50(0.5) delta means for every $1 move in Apple stock the 50 strike call would move by 0.5, conversely a delta of 1 or 100 is an inthe money option and for $1 movement in the priceof apple, the option would change bh $1 - if apple is at 100, a 90 strike callo option is ITM and will have a delta of 1.
+
+In addition,  the sign of the delta shows the bias of the option, so a 0.5 delta is positive and has a long bias while a -0.5 delta is bearish. 
+The positive delta call option would gain from Apple price moving up, while short delta of -0.5 would gain if apple stock falls. The delta also acts as a probability gauge. 
+So a 0.3 or 30 delta call has a 30% chance of expiring ITM at expiration. The 30 Delta could correspond to a strike of 130 whit Apple at 100 today and 15 days to expiration. So apple would have to close above 130 at expiration for the 30 Delta call to be ITM.
+
+Theta is time decay of an option premium. Options are decaying assets because unlike owning equity which is yours to keep for as long as you choose, options have a shelf life. They expire quarterly, monthly and there are some weekly options too. For our purposes we shall be trading the quarterly options, that is where the bulk of the liquidity is.
+
+Option prices/premium comprises of intrinsic and extrinsic value. Here is an example to illustrate this; With Apple at 100, a 95 Call is in the money by $5, in other words if you own the 95 Call you could exercise your option today and buy apple stock for 95 while the stock is trading at 100 for a $5 profit.
+Therefore, theoretically you would expect the 95 call to be trading for at least $5 - given apple is at 100. The $5 is the intrinsic value of the option and it is the amount by which the option is in the money (ITM). Now if the option has about 20 days to expire, there is more time for apple to move above 100 and as such the 95 call would usually trade for >$5
+Let us say it is trading for $8.50, the 3.50 over the intrinsic value is referred to as extrinsic or time value. The 3.50 respresents the time left to expiration (theta) and also reflects the level of implied volatility (IV) - measured by Vega.
+
+So how does theta decay work? For every passing day that Apple price is below the call strike - the option premium should fal by the theta value, i.e. it should decay. An analogy I usually use to explain theta is car insurance. If you wanted to insure your car for a month and your friend wanted to insure an identical car for 12 months (all other things being equal), you would expect your friend to pay more than you in premiums.
+The reason he would pay more is because there are 11 more months during which something could go wrong with the car. He is paying for more "time" than you are and his theta  or time value would decay at a much slower pace than yours.
+
+Rho is the impact of a change in interest rates on premiums. It is insignificant for the option sizes we would be traded, but for institutions with hundreds of millions exposure the RHO greek would tell them how much they are forfeiting in terms of over night interest by tying up their funds in option premiums. But with interest rates at rock bottom for a decade, even institutions pay less attention to RHO these days.
+
+So What is the strategy and how does it work?
+The strategy is selling Vertical spreads also known as credit spreads.
+
+The strategy I will be employing is non-directional (Delta neutral). The trade starts off being delta neutral but it could gain some positive or negative delta during the duration of the trade - but the intention is to be delta neutral.
+The objective is not to predict market direction and benefit from a move in the anticipated direction, the aim is to capture “theta decay” during periods of high Implied Volatility (IV) by selling an at the money option (ATM) and hedging with a further out of the money option (OTM). 
+It is a well known fact that <90% of all exchange listed options expire worthless. This strategy aims to capitalize on the reversion to the mean nature of implied volatility, the drop off in IV leads to premiums contracting and the spread sold when IV was elevated will be bought back at a much lower price.
+IV spikes for a number of reasons....usually driven by news events, earnings, geo political events etc.
+
+When IV spikes options become very expensive, an analogy I use is buying an air ticket to Nigeria from UK on 20Dec compared to buying the same ticket to Nigeria on Feb 1st. The tickets in Dec are usually priced higher than Feb - even before the demand for the tickets is known. Same with travelling during school holidays - a premium is added to the tickets.
+When IV is high options automatically become expensive and a timely example is Boeing. The IV spiked last week to around 68%, it is now around 37.9%
+When IV spikes all options prices become "rich" both calls and puts and the idea is to sell a 30 delta OTM option (or as close to 30 delta as possible) and to hedge by buying a further OTM option for a net credit.
+
+I will give an example in the next instalment but here are a few filters I apply to screen for trades that meet my criteria for selling a vertical spread/credit;
+
+Duration - There must be at least 25 to 30 days left to expiry of the options used. 
+Ideally we want to be selling around the 45 to 50 day mark. The option premium decay really kicks around the 30 day mark.
+
+IV Rank - IV of the underlier must be above 50%, the higher the better. Ideally we want to be selling IV around 60% and above, but there are times when we experience an extended period of low IV and a spike up to 50% offers good selling opportunuties. 
+
+Earnings - There must be no earnings announcement for the underlier during the expiration cycle. Earnings also cause IV to spike in anticipation of earnings report but selling options within the earnings window is not advisable as there is a huge delta/gamma risk post announcement. Binary events known well in advance do not tend to provide good trading opportunities as the spike in IV is well calliberated and planned by the market markers and they usually widen the spreads.
+
+Strike Selection - We want to be selling the 30 delta strike or as close to 30 delta as possible and we will buy the next strile or two after 30 delta as a hedge. The 30 delta is by definition out of the money (OTM) and would usually be cheap but when IV spikes they have some decent premiums.
+In addition we want to collect around a third of the width of the strikes in the spread in premium - or as close as possible. For example if we are selling the AAPL 100/105 Call spread - the width is $5, we want to collect around $1.6/contract. Like anything in life there is room for flexibility and we sometimes have to contend with accepting about $1.3, but the goal is to aim for about a third of the width of the strikes.
+    
+
+My model portfolio is $100k and the maximum exposure/trade will be limited to $5k risk. If you intend to trade a real life account with real money, I will advise not to risk more than 5% of total account on any one trade - that is not 5% premium but 5% risk.
+Here is an example. If we sell the 100/105 Call spread for 1.6 or $160/contract and we have a 100k portfolio, the max no contracts we can sell is 
+
+What is the strategy?
+The Options strategy I will be employing is non-directional (Delta neutral), the objective is not to predict market direction and benefit from a move in the anticipated direction, the aim is to capture “theta decay” during periods of high Implied Volatility (IV) by selling an at the money option (ATM) and hedging with a further out of the money option (OTM). 
+It is a well known fact that <90% of options expire worthless. This strategy aims to capitalize on the reversion to the mean nature of implied volatility, the drop off in IV leads to premiums contracting and the spread sold when IV was elevated will be boug
