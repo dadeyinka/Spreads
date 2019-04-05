@@ -1,0 +1,70 @@
+So What is the strategy?
+
+The strategy is a non directional options strategy (Delta neutral), the objective is not to predict market direction and benefit from a move in the anticipated direction up or down, the aim is to structure an option spread or a series of spreads to capture “theta decay” (premiums come down as time passes by all other things being equal) during periods of high Implied Volatility (IV) by selling an at/out of the money option (ATM/OTM) and hedging with a further OTM option. 
+
+It is a well known fact that <90% of excahnge listed options expire worthless. This strategy aims to capitalize on the reversion to the mean nature of implied volatility and the drop off in IV leads to premiums contracting and the spread sold when IV was elevated will shrink and bought back at a lower price.
+
+Here is an example everyone can relate to, Boeing (BA) recently suffered a bout of bad publicity due to the crash of Ehtiopian which happened shortly after the Indonesian crash. 2 days after the crash implied volatility of BA stock his 85% and it hit my radar. Without picking a side (bullish/bearish), I looked at the OTM options, particularly around the 30 deltas of both calls and Puts - and the Puts gave a better risk / reward ratio.
+I sold a the following Put Spread for $1.80 with xdays to expiry of the options.
+ 
+A put gives you the right to sell an asset at the Strike and when you buy puts you are bearish, however when you sell Puts it has positive delta and has a bullish slant. 
+In my case, I sold the Puts not because I was bullish and I expect the stock to go up - but the selling was massive which pushed up IV and marked up the Puts disproportionately and that "skewed" the options. I am simply betting that over the next Xdays BA will not go below X, or to put it another way - by expiry BA will not be below X.
+
+So the price could stay the same, it could go up as much as it wants, and it can also go down but not below X and the position will still make money. And with every passing day that BA is not below X, the spread I sold for $1.8 will contract and get smaller and I will hold it until it contracts to around 0.7 and my GTC buy order will get me out, and that is what I did.
+
+What happens if it did go below X?
+If it had gone below X I would have lost $3.2 which is the maximum I can lose on this trade (5 - 1.8), however I could have made an adjustment to the trade to reduce my loss.
+
+Say after 10 days in the trade, BA is below X and my spread I sold for 1.8 is now worth 2.6 and I am losing money, I can sell a $5 call spread with no additional exposure and no extra margin tied up.
+I could sell the xx/xx Call spread for $1 making my total premium collected $2.8 and my max loss is now 2.2 no matter what happens to BA stock. This is because I now have a call spread and a Put spread (known as an Iron Condor) both are $5 wide, and the stock cannot finish ITM for both the call and the Put, only one side can finish ITM. 
+The new break even points are XXXX and we will still make money in this trade if BA finishes between X and X, or if it stays between this range close to expiration and the spread of the Iron Condor shrinks from $2.8 to <$2.8
+
+There are however times when selling a call spread makes no sense and the premium is too low, in such a case one would take the max loss of $3.2
+
+
+So why don't all the banks and hedge funds do these trades?
+Well they do, but their pool of assets to choose from is limited due to liquidity. There are many equity options where the total option interest or volume is less than 1000 contracts and have tight spreads. For retail investors like us trading 10 to 50 contracts with exposure of $5k to $25k that is okay, but when you have tens to hundreds of millions to invest these "thin" markets become inaccessible.
+
+They do however employ this and many other options strategies in some commodities, currencies and some equities with deep liquidity like Apple and Amazon.
+
+We will also look at commodities, currencies and some rates - if IV is high enough to meet our criteria. 
+
+
+What is the frequency of the trades?
+Because it is reliant on high IV, there would be periods when there is not any trade at all - especially equities. But an average in a low IV encironment it would be around 4 to 5 trades a month or per expiration cycle.
+A good general guide is the VIX Index which is the volatility Index of the S&P500 Index, when VIX is over 20 then volatility is generally high. 
+
+
+Unlike equity or Futures prices that jump around very quickly, option spreads tend to move at a slower pace unless IV is super high and there is chaos in the markets, as such when I post a trade it can still be taken the next day provided the price/premium is close enough to the price I posted.
+
+
+So what will a trade you post look like?
+As mentioned earlier, some knowledge of options - expirations, strikes and deltas is required to be able to place a spread order and I may not be able to assist with individually placing orders. I will advise playing around in a paper trade account to get familiar with entering spread tickets as well as GTC orders to close the spread when target is reached.
+
+Here is an example of how I would post a trade;
+
+Entry criteria
+Stock 
+IV
+Current Price
+Earnings within the next 40 days?
+
+Trade details
+Spread
+Option Expiry
+Days to expiry (DTE)
+Price
+
+The trade is a Vertical spread, enter as a single ticket;
+Sell @
+Buy @
+For a credit of 
+
+Once you get filled
+
+
+Enter a GTC speard order as follows
+Buy @
+Sell @
+for a debit of
+GTC - Good until cancelled.
